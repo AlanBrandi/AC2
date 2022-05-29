@@ -24,6 +24,13 @@ public class MouseManager : MonoBehaviour
         {
             switch (hit.collider.tag)
             {
+                case "Exit":
+                    Cursor.SetCursor(doorWay, Vector3.zero, CursorMode.Auto);
+                    if (Input.GetMouseButton(1))
+                    {
+                        OnMouseClickInteractable.Invoke(hit.collider.GetComponent<Transform>().position);
+                    }
+                    break;
                 case "Rock":
                     Cursor.SetCursor(arrow, Vector3.zero, CursorMode.Auto);
                     break;

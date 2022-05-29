@@ -135,5 +135,12 @@ namespace Invector.vCharacterController
         {
             anim.SetFloat("Speed", rigidbody.velocity.magnitude);
         }
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.collider.CompareTag("NPC"))
+            {
+                anim.SetBool("IsDead", true);
+            }
+        }
     }
 }

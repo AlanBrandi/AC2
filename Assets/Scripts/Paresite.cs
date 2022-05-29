@@ -28,9 +28,9 @@ public class Paresite : MonoBehaviour
 
     private void Update()
     {
-        Distance = (this.transform.position.magnitude - Player.transform.position.magnitude);
+        Distance = Vector3.Distance(this.transform.position, Player.transform.position);
 
-        if (Distance <= 20)
+        if (Distance <= 51)
         {
             animator.SetFloat("Speed", agent.velocity.magnitude);
             agent.SetDestination(Player.position);
