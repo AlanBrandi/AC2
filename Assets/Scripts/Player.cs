@@ -28,4 +28,12 @@ public class Player : MonoBehaviour
    {
         agent.SetDestination(Location);
    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("NPC"))
+        {
+            animator.SetBool("IsDead", true);
+        }
+    }
 }

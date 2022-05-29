@@ -4,19 +4,54 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Paresite : MonoBehaviour
-{ 
+{
+
+    public List<Point> lstPoints;
     NavMeshAgent agent;
     public Transform Player;
     Animator animator;
+    public float Distance;
+
+    public int indexSorteado = 0;
     private void Start()
     {
+
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+
+        for (int x = 0; x < lstPoints.Count; x++)
+        {
+            lstPoints[x].index = x;
+        }
+        agent.SetDestination(lstPoints[indexSorteado].transform.position);
     }
 
     private void Update()
     {
-        animator.SetFloat("Speed", agent.velocity.magnitude);
-        agent.SetDestination(Player.position);
+        Distance = (this.transform.position.magnitude - Player.transform.position.magnitude);
+
+        if (Distance <= 25)
+        {
+            animator.SetFloat("Speed", agent.velocity.magnitude);
+            agent.SetDestination(Player.position);
+        }
+        else
+        {
+            animator.SetFloat("Speed", agent.velocity.magnitude);
+            agent.SetDestination(lstPoints[indexSorteado].transform.position);
+        }
+        
     }
+    private void OnTriggerEnter(Collider other)
+    {
+
+        while (other.GetComponent<Point>().index == indexSorteado)
+        {
+
+            indexSorteado = Random.Range(0, lstPoints.Count);
+        }
+
+        agent.SetDestination(lstPoints[indexSorteado].transform.position);
+    }
+
 }
