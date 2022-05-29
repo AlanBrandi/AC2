@@ -3161,18 +3161,18 @@ MonoBehaviour:
     rotationSpeed: 17.51
     walkByDefault: 1
     rotateWithCamera: 0
-    walkSpeed: 1370.9
-    runningSpeed: 981.5
-    sprintSpeed: 1856.7
+    walkSpeed: 5797.7
+    runningSpeed: 6546
+    sprintSpeed: 8179
   strafeSpeed:
-    movementSmooth: 6
+    movementSmooth: 1
     animationSmooth: 0.2
     rotationSpeed: 16
     walkByDefault: 0
     rotateWithCamera: 0
-    walkSpeed: 2
-    runningSpeed: 4
-    sprintSpeed: 6
+    walkSpeed: 1129.54
+    runningSpeed: 1267.55
+    sprintSpeed: 1083.17
   jumpWithRigidbodyForce: 0
   jumpAndRotate: 1
   jumpTimer: 0.3
