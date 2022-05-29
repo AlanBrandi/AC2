@@ -56,6 +56,9 @@ public class CharacterMovement : MonoBehaviour
 	    isSprinting = ((Input.GetKey(sprintJoystick) || Input.GetKey(sprintKeyboard)) && input != Vector2.zero && direction >= 0f);
         anim.SetBool("IsSprinting", isSprinting);
         
+            
+
+
         // Update target direction relative to the camera view (or not if the Keep Direction option is checked)
         UpdateTargetDirection();
 
