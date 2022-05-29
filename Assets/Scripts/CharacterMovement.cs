@@ -12,6 +12,7 @@ public class CharacterMovement : MonoBehaviour
     public KeyCode sprintKeyboard = KeyCode.Space;
 
     private float turnSpeedMultiplier;
+
     private float speed = 0f;
     private float direction = 0f;
     private bool isSprinting = false;
@@ -101,6 +102,13 @@ public class CharacterMovement : MonoBehaviour
             targetDirection = input.x * right + Mathf.Abs(input.y) * forward;
         }
     }
-}
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.collider.CompareTag("NPC"))
+            {
+                anim.SetBool("IsDead", true);
+            }
+        }
+    }
 
 }
