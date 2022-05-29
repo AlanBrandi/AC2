@@ -455,7 +455,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_LocalScale.x
@@ -594,7 +594,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
 --- !u!1001 &150720415
 PrefabInstance:
@@ -1656,7 +1656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 325645768742692029, guid: 4c915776aff098e45bb3b192468f4953, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 325645768742692029, guid: 4c915776aff098e45bb3b192468f4953, type: 3}
       propertyPath: m_LocalScale.x
@@ -1710,7 +1710,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 325645768742692031, guid: 4c915776aff098e45bb3b192468f4953, type: 3}
+    - {fileID: 6271780950222407358, guid: 4c915776aff098e45bb3b192468f4953, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4c915776aff098e45bb3b192468f4953, type: 3}
 --- !u!1 &526477028
 GameObject:
@@ -1749,7 +1751,7 @@ Transform:
   - {fileID: 1039215755}
   - {fileID: 1577882716}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &586166818 stripped
 MonoBehaviour:
@@ -1856,7 +1858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3219498414224493126, guid: 33d220f016f107f49b93635fdde91696, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3219498414224493126, guid: 33d220f016f107f49b93635fdde91696, type: 3}
       propertyPath: m_LocalScale.x
@@ -2181,7 +2183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030232920579604958, guid: 4aa9b1fbc1cd44f48bdccde396b8c8d4, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1030232920579604958, guid: 4aa9b1fbc1cd44f48bdccde396b8c8d4, type: 3}
       propertyPath: m_LocalScale.x
@@ -2315,7 +2317,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936701823}
-  m_LocalRotation: {x: 0.12575561, y: 0.46115187, z: -0.06621153, w: 0.8758656}
+  m_LocalRotation: {x: 0.12575555, y: 0.46115184, z: -0.06621153, w: 0.87586564}
   m_LocalPosition: {x: 579.05115, y: 79.58911, z: 671.7572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2794,7 +2796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4270873914606422417, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.15899406
+      value: 0.15899405
       objectReference: {fileID: 0}
     - target: {fileID: 4270873914606422417, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2802,7 +2804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4270873914606422417, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.08371194
+      value: -0.083711945
       objectReference: {fileID: 0}
     - target: {fileID: 4270873915082125156, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2842,15 +2844,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4270873915603442817, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.12539215
+      value: 0.12539212
       objectReference: {fileID: 0}
     - target: {fileID: 4270873915603442817, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.46117932
+      value: 0.4611793
       objectReference: {fileID: 0}
     - target: {fileID: 4270873915603442817, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0660202
+      value: -0.06602019
       objectReference: {fileID: 0}
     - target: {fileID: 4270873915884009325, guid: 65339f8487de09e40817d66710b602e8, type: 3}
       propertyPath: m_ScreenY
@@ -3010,7 +3012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1168579270955178752, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1168579270955178752, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: m_LocalScale.x
@@ -3131,6 +3133,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 838c0bef810bfe94d8e33947c3cba7c6, type: 3}
+--- !u!1 &1420472320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 325645768742692026, guid: 4c915776aff098e45bb3b192468f4953, type: 3}
+  m_PrefabInstance: {fileID: 412615213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1420472321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420472320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fbf3aa05f6be24780438449f505aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useRootMotion: 0
+  rotateByWorld: 0
+  useContinuousSprint: 1
+  sprintOnlyFree: 1
+  locomotionType: 2
+  freeSpeed:
+    movementSmooth: 1
+    animationSmooth: 0
+    rotationSpeed: 17.51
+    walkByDefault: 1
+    rotateWithCamera: 0
+    walkSpeed: 1370.9
+    runningSpeed: 981.5
+    sprintSpeed: 1856.7
+  strafeSpeed:
+    movementSmooth: 6
+    animationSmooth: 0.2
+    rotationSpeed: 16
+    walkByDefault: 0
+    rotateWithCamera: 0
+    walkSpeed: 2
+    runningSpeed: 4
+    sprintSpeed: 6
+  jumpWithRigidbodyForce: 0
+  jumpAndRotate: 1
+  jumpTimer: 0.3
+  jumpHeight: 4
+  airSpeed: 5
+  airSmooth: 6
+  extraGravity: -10
+  limitFallVelocity: -15
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  groundMinDistance: 0.25
+  groundMaxDistance: 0.5
+  slopeLimit: 75
 --- !u!1001 &1577882715
 PrefabInstance:
   m_ObjectHideFlags: 0
