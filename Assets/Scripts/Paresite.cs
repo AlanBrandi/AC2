@@ -11,6 +11,7 @@ public class Paresite : MonoBehaviour
     public Transform Player;
     Animator animator;
     public float Distance;
+    public float minDistance = 51;
 
     public int indexSorteado = 0;
     private void Start()
@@ -30,7 +31,7 @@ public class Paresite : MonoBehaviour
     {
         Distance = Vector3.Distance(this.transform.position, Player.transform.position);
 
-        if (Distance <= 51)
+        if (Distance <= minDistance)
         {
             animator.SetFloat("Speed", agent.velocity.magnitude);
             agent.SetDestination(Player.position);

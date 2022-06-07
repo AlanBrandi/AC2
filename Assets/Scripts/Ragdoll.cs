@@ -13,7 +13,7 @@ public class Ragdoll : MonoBehaviour
 
     private void Start()
     {
-        audioDie = GetComponent<AudioSource>();
+        //audioDie = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -22,10 +22,10 @@ public class Ragdoll : MonoBehaviour
         
         if (Physics.Raycast(ray, out hit, 20, mask))
         {
-           audioDie.Play();
+           //audioDie.Play();
 
             hit.collider.GetComponent<Rigidbody>().AddForce(ray.direction * bulletForce);
-            Instantiate(BloodFX, hit.point, Quaternion.LookRotation(hit.normal), hit.collider.transform);
+            Instantiate(BloodFX, this.transform.position, Quaternion.LookRotation(hit.normal), hit.collider.transform);
             enabled = false;
         }
     }

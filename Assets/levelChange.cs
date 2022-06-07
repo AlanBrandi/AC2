@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class levelChange : MonoBehaviour
 {
+    public string levelto;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene(levelto);
         }
     }
 }

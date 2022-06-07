@@ -2227,6 +2227,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1236841976}
     - target: {fileID: 1370489333, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
+      propertyPath: minDistance
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370489333, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: lstPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -2248,7 +2252,7 @@ PrefabInstance:
       objectReference: {fileID: 1145514757}
     - target: {fileID: 1370489334, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: m_Speed
-      value: 10
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 1370489334, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: m_Acceleration
@@ -2256,7 +2260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1370489334, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: m_AngularSpeed
-      value: 100
+      value: 408.5
       objectReference: {fileID: 0}
     - target: {fileID: 1168579270955178752, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: m_RootOrder
@@ -2316,6 +2320,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2253026744197502327, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
       propertyPath: m_Name
+      value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253026744197502327, guid: 9023310e6cb322545a7a1f264346a187, type: 3}
+      propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2527,6 +2535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341d1054e04758d4c9c2c80ac4fbe529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelto: Level2
 --- !u!1001 &1974455988
 PrefabInstance:
   m_ObjectHideFlags: 0
